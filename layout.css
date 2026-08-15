@@ -8,6 +8,11 @@ nav {
     
 }
 
+div {
+    background-color: #ffc9c9;
+    text-align: center;
+}
+
 section {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBKXR2pYwfcgTdh0AVXmcCvWFhdpOPWURS5dPvbBtrw&s=10);
     background-size: cover;
@@ -37,4 +42,8 @@ p {
     text-align: center;
     font-size: x-large;
     background-color: #ffc9c9;
+}
+
+footer {
+
 }
