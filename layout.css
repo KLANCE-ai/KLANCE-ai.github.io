@@ -9,8 +9,11 @@ nav {
 }
 
 div {
-    background-color: #ffc9c9;
-    text-align: center;
+    background-color: #ffc9c9(237, 221, 83, 1);
+    max-width: 50rem; 
+    margin: 0 auto;
+    padding: 4rem;
+    padding:
 }
 
 section {
@@ -18,20 +21,30 @@ section {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    filter:blur(5px)
+    filter:blur(0px)
 }
 
 button {
-    
+    background-color: #ffc9c9;
+    padding: 1rem;
+    border-radius: 50%;
+    border-style:hidden;
 }
 
 ul{
     text-align: center;
+    margin: 10;
+    padding: 0;
+
 }
 
-h1 {
-    text-align: center;
 
+h1 {
+    font-size:xx-large;
+    text-align: center;
+    padding: 4rem;
+    color: #d13e3e;
+    text-shadow: ;
 }
 
 h2 {
@@ -40,10 +53,22 @@ h2 {
 
 p {
     text-align: center;
-    font-size: x-large;
+    font-size:x-large;
     background-color: #ffc9c9;
 }
 
+a:link {
+    text-decoration: none;
+
+}
+
+a {
+    color: black;
+
+}
+
 footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
