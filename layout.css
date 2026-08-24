@@ -5,15 +5,15 @@ body {
 }
 
 nav {
-    
+   
 }
 
-div {
-    background-color: #ffc9c9(237, 221, 83, 1);
+#info {
+    background-color: #ffec99(237, 221, 83, 1);
     max-width: 50rem; 
     margin: 0 auto;
-    padding: 4rem;
-    padding:
+    padding: 0rem;
+    border-radius: 50%;
 }
 
 section {
@@ -21,13 +21,18 @@ section {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    filter:blur(0px)
+}
+
+section {
+
 }
 
 button {
-    background-color: #ffc9c9;
+    background-color: #ffec99;
     padding: 1rem;
-    border-radius: 50%;
+    margin: 0 auto;
+    border-radius: 23%;
+    border-color: black;
     border-style:hidden;
 }
 
@@ -40,11 +45,11 @@ ul{
 
 
 h1 {
-    font-size:xx-large;
+    font-size:xxx-large;
     text-align: center;
     padding: 4rem;
     color: #d13e3e;
-    text-shadow: ;
+    text-shadow: 
 }
 
 h2 {
