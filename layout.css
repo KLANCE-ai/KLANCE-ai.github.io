@@ -13,11 +13,11 @@ nav {
     max-width: 50rem; 
     margin: 0 auto;
     padding: 0rem;
-    border-radius: 50%;
+    border-radius: 30px;
 }
 
 section {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBKXR2pYwfcgTdh0AVXmcCvWFhdpOPWURS5dPvbBtrw&s=10);
+    background-image: url(https://storage.ghost.io/c/80/1d/801d5d13-5875-4136-9bfc-1e2fe01b2bff/content/images/size/w1000/2020/08/Unsplash_Civil_Rights_005_BW.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -29,10 +29,10 @@ section {
 
 button {
     background-color: #ffec99;
-    padding: 1rem;
+    padding: 20px 50px;
     margin: 0 auto;
-    border-radius: 23%;
-    border-color: black;
+    border-radius: 12px;
+    border: 2px black;
     border-style:hidden;
 }
 
@@ -40,7 +40,6 @@ ul{
     text-align: center;
     margin: 10;
     padding: 0;
-
 }
 
 
@@ -49,7 +48,6 @@ h1 {
     text-align: center;
     padding: 4rem;
     color: #d13e3e;
-    text-shadow: 
 }
 
 h2 {
@@ -64,16 +62,13 @@ p {
 
 a:link {
     text-decoration: none;
-
 }
 
 a {
     color: black;
-
 }
 
 footer {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
