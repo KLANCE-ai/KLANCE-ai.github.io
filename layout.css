@@ -36,6 +36,22 @@ button {
     border-style:hidden;
 }
 
+#startbutton {
+    background-color: #ffec99;
+    padding: 20px 50px;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px black;
+    border-style:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button {
+    min-width: 1000px;
+}
+
 ul{
     text-align: center;
     margin: 10;
@@ -46,7 +62,7 @@ ul{
 h1 {
     font-size:xxx-large;
     text-align: center;
-    padding: 4rem;
+    padding: 2rem;
     color: #d13e3e;
 }
 
@@ -70,5 +86,5 @@ a {
 
 footer {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
