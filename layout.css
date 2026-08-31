@@ -17,7 +17,7 @@ nav {
 }
 
 section {
-    background-image: url(https://storage.ghost.io/c/80/1d/801d5d13-5875-4136-9bfc-1e2fe01b2bff/content/images/size/w1000/2020/08/Unsplash_Civil_Rights_005_BW.jpg);
+    background-image: url('images/civilrights.png');
     background-size: cover;
     width: 100%;
     height: 100vh;
