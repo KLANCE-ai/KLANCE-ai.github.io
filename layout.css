@@ -11,7 +11,7 @@ nav {
 
 #info {
     background-color: #ffec99(237, 221, 83, 1);
-    max-width: 50rem; 
+    max-width: 45rem; 
     margin: 0 auto;
     padding: 0rem;
     border-radius: 30px;
@@ -30,7 +30,8 @@ section {
 
 .hero {
     padding: 3rem;
-
+    margin: 0 auto;
+    max-width: 45rem;
 }
 
 button {
@@ -61,6 +62,10 @@ button {
     cursor: pointer;
 }
 
+#startbutton:hover {
+    background-color: #f5d64e;
+}
+
 #button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-width: 1000px;
@@ -83,8 +88,9 @@ h1 {
     font-size:xxx-large;
     text-align: center;
     padding: 1rem;
-    color: #ffd000;
-    text-shadow: 2px 2px #b99801;
+    color: #f5d64e;
+    text-shadow: 2px 2px #aa8f18;
+    
 }
 
 h2 {
