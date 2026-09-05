@@ -45,11 +45,6 @@ a {
     color: black;
 }
 
-footer {
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
 
 main {
     max-width: 45rem;
@@ -59,13 +54,10 @@ main {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
-}
-
-.intro {
-    margin-bottom: 3rem;
-    color:rgb(247, 252, 252);
+    padding: 2rem;
+    align-items: center;
 }
 
 .question {
@@ -74,20 +66,35 @@ h1 {
     margin-bottom: 3rem;
 }
 
-h2 {
-    font-size: 2rem;
-    font-style:italic;
+#questionName {
+
+}
+
+.questionnumber {
+    font-size: xxx-small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1.5rem;
 }
 
 button {
-    margin: 1rem 0;
+    margin: 0 auto;
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 12px;
+    padding: 20px 50px;
     border-color: rgb(255, 255, 255);
-    background-color: aqua;
+    background-color: #ffec99;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(43, 181, 245);
+    background-color: #e0c85e;
+}
+
+#questionbutton {
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

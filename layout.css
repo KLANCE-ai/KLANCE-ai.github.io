@@ -58,13 +58,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px 
-    transition: width 0.4s, background-color 0.4s;
+    transition: 0.4s;
 }
 
 #startbutton:hover {
     background-color: #e7c944;
-    width: 250px;
 }
 
 
