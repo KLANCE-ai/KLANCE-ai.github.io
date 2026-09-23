@@ -20,6 +20,7 @@ button {
     border-style:hidden;
     transition: 0.4s;
     cursor: pointer;
+    text-align: center;
 }
 
 button:hover {
@@ -35,6 +36,7 @@ ul{
 h2 {
     text-align: center;
     text-shadow: 2px 2px #faa6a6;
+
 }
 
 a:link {
@@ -55,25 +57,22 @@ main {
 
 h1 {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
     padding: 2rem;
-    align-items: center;
+    text-align: center;
 }
 
 .question {
-    border-left: 5px solid #ee10b6;
     padding: 1rem 0 2rem 2rem;
     margin-bottom: 3rem;
 }
 
 #questionName {
+    padding: 0;
 
 }
 
 .questionnumber {
-    font-size: xxx-small;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 1.5rem;
+    
 }
 
 button {
