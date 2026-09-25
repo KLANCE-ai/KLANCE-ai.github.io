@@ -121,12 +121,32 @@ h4 {
     margin: 0 auto;
 }
 
+.nextButton1 {
+    background: #b2f2bb;
+    border: solid #099268;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    padding: 5px 50px;
+    margin-right: 5px;
+}
+
+.nextButton1:hover {
+    background-color: #9acea1; 
+}
+
 button:hover {
     background-color: #e0c85e;
 }
 
 #questionbutton {
     align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size:x-large;
+    background-color: #ffc9c9;  
 }
 
 footer {
