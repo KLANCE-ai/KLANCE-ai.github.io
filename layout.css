@@ -63,6 +63,7 @@ button {
 
 #startbutton:hover {
     background-color: #e7c944;
+    text-decoration: underline;
 }
 
 
