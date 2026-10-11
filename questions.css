@@ -116,6 +116,32 @@ h1 {
     text-align: center;
 }
 
+.resultMessage {
+    display: none;
+    background-color: #fff0ad;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    border-left: 6px solid #fc8a8a;
+    border-right: 6px solid #fc8a8a;
+    font-size: 22px;
+    color: #000000;
+    margin: 40px auto 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: fadeIn 0.5s ease;
+}
+
+.scoreText {
+    font-size: 36px;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
 .questionButton {
     display: flex;
     flex-direction: column;

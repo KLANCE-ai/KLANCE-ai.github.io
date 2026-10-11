@@ -91,6 +91,7 @@ const questions = [
     }
 ];
 
+const resultMessage = document.querySelector(".resultMessage");
 const questionElement = document.querySelector(".questionName");
 const answerButtons = document.querySelector(".questionButton");
 const nextButton = document.querySelector(".nextButton1");
@@ -98,15 +99,10 @@ const nextButton = document.querySelector(".nextButton1");
 let currentQuestionIndex = 0;
 let score = 0;
 
-function startQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();
-}
-
 function showQuestion() {
     resetState();
+
+    questionElement.style.marginTop = "";
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -163,9 +159,25 @@ function showScore() {
     resetState();
 
     questionElement.innerHTML =
-        `You scored ${score} out of ${questions.length}!`;
+        `You scored ${score} out of ${questions.length} questions correctly!`;
+        questionElement.classList.add("scoreText");
+        questionElement.style.marginTop = "0";
+        resultMessage.style.display = "block";
 
-    nextButton.innerHTML = "Play Again";
+    if (score === questions.length) {
+        resultMessage.innerText = "Congratulations! You did so well :) ";
+
+    } else if (score >= questions.length * 0.7) {
+        resultMessage.innerText = " Good job! You're doing amazing, try again for top marks!";
+
+    }else if (score >= questions.length * 0.4) {
+        resultMessage.innerText = "Try again! You're doing well!";
+
+    }else {
+        resultMessage.innerText = "Check out the timeline page for help, better luck next time!";
+    }
+
+    nextButton.innerHTML = "Retake";
     nextButton.style.display = "block";
 }
 
@@ -177,6 +189,16 @@ function handleNextButton() {
     } else {
         showScore();
     }
+}
+
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    resultMessage.innerText = "";
+    resultMessage.style.display = "none";
+    questionElement.style.marginTop = "";
+    nextButton.innerHTML = "Next";
+    showQuestion();
 }
 
 nextButton.addEventListener("click", () => {
