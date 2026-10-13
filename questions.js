@@ -1,3 +1,4 @@
+// list of questions with right or wrong answers
 const questions = [
     {
         question: "The reason Birmingham was the first city that King attempted to get rid of Jim Crow's law was because it was the most…",
@@ -89,7 +90,6 @@ const questions = [
             {text: "Nation Association Advancement of Coloured People", correct: false},
         ]
     }
-];
 
 const resultMessage = document.querySelector(".resultMessage");
 const questionElement = document.querySelector(".questionName");
@@ -133,7 +133,7 @@ function resetState() {
     }
 }
 
-function selectAnswer(e) {
+function selectAnswer(e) { //e means event which will change on target
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
 
