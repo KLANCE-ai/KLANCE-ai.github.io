@@ -94,10 +94,10 @@ const questions = [
 
 // connecting questions values to variables
 const questionElement=document.getElementById("questionName");
-const answerButton=document.getElementById("answerButtons");
+const answerButtons=document.getElementById("answerButtons");
 const nextButton=document.getElementById("next-btn");
 
-let currentQuestionIndex: 0;
+let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz(){
@@ -107,11 +107,27 @@ function startQuiz(){
     showQuestion();
 }
 
+
 function showQuestion(){
+    resetState(); // resets previous options eg '1'
     let currentQuestion = questions[currentQuestionIndex]; // for numbering the questions
     let questionNo = currentQuestionIndex + 1; 
     questionElement.innerHTML = questionNo + ". " + currentQuestion.
     question;
 
-    // begin answers i think?
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button"); // creates button tag and saves it as a variable
+        button.innerHTML = answer.text; // adding answer text to options
+        button.classList.add("btn");
+        answerButtons.appendChild(button); // button from before is added to div
+    });
 }
+
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButton.firstChild);
+    }
+}
+
+startQuiz();

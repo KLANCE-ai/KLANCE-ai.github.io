@@ -6,7 +6,7 @@
     <title>Black Civil Rights Quiz</title>
 
     <link rel="stylesheet" href="questions.css">
-    <script src="questions.js" defer></script> 
+    <script src="questions.js" defer></script>
 </head>
 
 <body>
@@ -15,26 +15,33 @@
 
     <nav>
         <ul>
-            <button class="navbutton">
+            <a class="navbutton">
                 <a href="index.html"
                    onclick="return confirm('If you leave the quiz now all current progress will be lost!');">
                     HOME
                 </a>
-            </button>
+            </a>
 
-            <button class="navbutton">
-                <a href="question1.html"
+            <a class="navbutton">
+                 <a href="questions.html"
                    onclick="return confirm('If you leave the quiz now all current progress will be lost!');">
                     QUIZ
                 </a>
-            </button>
+            </a>
 
-            <button class="navbutton">
+            <a class="navbutton">
                 <a href="timeline.html"
                    onclick="return confirm('If you leave the quiz now all current progress will be lost!');">
                     TIMELINE
                 </a>
-            </button>
+            </a>
+
+                <a class="navbutton">
+                <a href="results.html"
+                   onclick="return confirm('If you leave the quiz now all current progress will be lost!');">
+                    RESULTS
+                </a>
+            </a>
         </ul>
     </nav>
 
@@ -42,18 +49,13 @@
 
         <div class="question1">
 
-            <h1 class="questionName"></h1>
+            <h2 id="questionName">Question here</h2>
 
-        </div>
-        
-        <div>
+            <div id="answerButtons"></div>
+            </div>
 
-        <p class="resultMessage"></p>
-
-        </div>
-        <div>
-            <button class="nextButton1">Next</button>
-        </div>
+            <button id="next-btn">Next</button>
+            </div>
 
     </section>
 
@@ -62,4 +64,4 @@
     </footer>
 
 </body>
-</html> 
+</html>
