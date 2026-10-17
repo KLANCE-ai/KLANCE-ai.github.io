@@ -120,14 +120,60 @@ function showQuestion(){
         button.innerHTML = answer.text; // adding answer text to options
         button.classList.add("btn");
         answerButtons.appendChild(button); // button from before is added to div
+        if(answer.correct){
+            button.dataset.correct = answer.correct; // false or true added
+        }
+        button.addEventListener("click", selectAnswer); // when answer is selected, this func is called
     });
 }
 
 function resetState(){
     nextButton.style.display = "none";
     while(answerButtons.firstChild){
-        answerButtons.removeChild(answerButton.firstChild);
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+
+function selectAnswer(e){ // tells if selectedBtn is correct or incorrect
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct"); // highlights correct anwser green
+        score++;
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct"); // 
+        }
+        button.disabled = true; // after btn is selected, everything gets disabled
+    });
+    nextButton.style.display = "block";
+}
+
+function showScore(){ // results page
+    resetState();
+    questionElement.innerHTML = `You scored ${score}/${questions.length}!`; 
+    nextButton.innerHTML = "Restart"; // inner HTMLS changed to display results
+    nextButton.style.display = "block";
+}
+
+function handleNextButton(){
+    currentQuestionIndex++; // increases question num by 1 when next btn is clicked
+    if(currentQuestionIndex < questions.length){
+        showQuestion(); // if another q, goes onto next
+    }else{
+        showScore(); // after last q, it reveals score
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+});
 
 startQuiz();
